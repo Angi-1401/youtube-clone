@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="description" content="YouTube clone made with pure HTML and CSS">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/_sytles.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/sidebar.css">
+  <link rel="stylesheet" href="./css/categories.css">
+  <link rel="stylesheet" href="./css/videos.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/c640c833fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-section">
+      <button class="btn navbar-mobile-btn"><i class="fa-solid fa-bars"></i></button>
+      <a href="https://www.youtube.com/" title="YouTube Home" target="_blank">
+        <img src="./img/brand/logo-mobile.png" alt="Logo" class="logo-mobile">
+      </a>
+      <a href="https://www.youtube.com/" title="YouTube Home" target="_blank">
+        <img src="./img/brand/logo.png" alt="Logo" class="logo">
+      </a>
+    </div>
+    <div class="navbar-section">
+      <form action="#" class="search-bar">
+        <input class="search-text" type="text" placeholder="Search">
+        <button class="btn search-btn"><i class="fa-solid fa-search"></i></button>
+        <button class="btn voice-search-btn"><i class="fa-solid fa-microphone"></i></button>
+      </form>
+    </div>
+    <div class="navbar-section">
+      <button class="btn navbar-mobile-btn" title="Search"><i class="fa-solid fa-search"></i></button>
+      <button class="btn navbar-mobile-btn" title="Search with your voice">
+        <i class="fa-solid fa-microphone"></i>
+      </button>
+      <button class="btn" title="Create"><i class="fa-solid fa-video"></i></button>
+      <button class="btn" title="Notifications"><i class="fa-solid fa-bell"></i></button>
+      <img src="./img/brand/user.png" alt="User" class="avatar">
+    </div>
+  </nav>
+  <!-- Content -->
+  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Sidebar - Main section -->
+      <div class="sidebar-section">
+        <div class="sidebar-link">
+          <img src="./svg/home.svg" sidebar-title>
+          <a href="#" class="sidebar-link-text">Home</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/shorts.svg" sidebar-title>
+          <a href="#" class="sidebar-link-text">Shorts</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/subcription.svg" sidebar-title>
+          <a href="#" class="sidebar-link-text">Subscribtions</a>
+        </div>
+      </div>
+      <hr>
+      <!-- Sidebar - Library section -->
+      <div class="sidebar-section">
+        <h4 class="sidebar-title">
+          You <i class="fa-solid fa-chevron-right"></i>
+        </h4>
+        <div class="sidebar-link">
+          <img src="./svg/your-channel.svg" sidebar-title>
+          <a href="#" class="sidebar-link-text">Your channel</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/history.svg" sidebar-title>
+          <a href="#" class="sidebar-link-text">History</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/playlist.svg" sidebar-title>
+          <a href="#" class="sidebar-link-text">Playlists</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/your-videos.svg" sidebar-title>
+          <a href="#" class="sidebar-link-text">Your videos</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/watch-later.svg" sidebar-title>
+          <a href="#" class="sidebar-link-text">Watch later</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/liked-videos.svg" sidebar-title>
+          <a href="#" class="sidebar-link-text">Liked videos</a>
+        </div>
+      </div>
+      <hr>
+      <!-- Sidebar - Subscription section -->
+      <div class="sidebar-section">
+        <h4 class="sidebar-title">Subscriptions</h4>
+        <p class="sidebar-text">Empty</p>
+      </div>
+      <hr>
+      <!-- Sidebar - Explore section -->
+      <div class="sidebar-section">
+        <h4 class="sidebar-title">Explore</h4>
+        <div class="sidebar-link">
+          <img src="./svg/trending.svg">
+          <a href="#" class="sidebar-link-text">Trending</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/music.svg">
+          <a href="#" class="sidebar-link-text">Music</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/gaming.svg">
+          <a href="#" class="sidebar-link-text">Gaming</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/sports.svg">
+          <a href="#" class="sidebar-link-text">Sports</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/learning.svg">
+          <a href="#" class="sidebar-link-text">Learning</a>
+        </div>
+      </div>
+      <hr>
+      <!-- Sidebar - Settings section -->
+      <div class="sidebar-section">
+        <div class="sidebar-link">
+          <img src="./svg/settings.svg">
+          <a href="#" class="sidebar-link-text">Settings</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/report-history.svg">
+          <a href="#" class="sidebar-link-text">Report history</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/help.svg">
+          <a href="#" class="sidebar-link-text">Help</a>
+        </div>
+        <div class="sidebar-link">
+          <img src="./svg/send-feedback.svg">
+          <a href="#" class="sidebar-link-text">Send feedback</a>
+        </div>
+      </div>
+      <hr>
+      <!-- Sidebar - Footer -->
+      <div class="sidebar-section">
+        <p class="sidebar-text">&copy; 2024 Google LLC</p>
+      </div>
+    </aside>
+    <div class="wrapper">
+      <!-- Header -->
+      <header>
+        <!-- Category list -->
+        <div class="categories">
+          <button class="category-btn active">All</button>
+          <button class="category-btn">Latest</button>
+          <button class="category-btn">Popular</button>
+          <button class="category-btn">Pokémon</button>
+          <button class="category-btn">Programming</button>
+          <button class="category-btn">HTML</button>
+          <button class="category-btn">CSS</button>
+          <button class="category-btn">Javascript</button>
+          <button class="category-btn">Angular</button>
+          <button class="category-btn">React</button>
+          <button class="category-btn">Python</button>
+          <button class="category-btn">Django</button>
+          <button class="category-btn">Flask</button>
+          <button class="category-btn">Bootstrap</button>
+          <button class="category-btn">Astro</button>
+          <button class="category-btn">Anime</button>
+        </div>
+      </header>
+      <!-- Videos section -->
+      <section>
+        <div class="videos">
+          <!-- Video 1 -->
+          <a href="https://www.youtube.com/watch?v=EeRfSNx5RhE"
+            title="Lofi x Chess.com ♟️ - chill beats to play chess to" target="_blank" class="video-card">
+            <div class="video-preview">
+              <img src="./img/thumbnails/thumbnail-1.jpg" alt="Thumbnail" class="video-thumbnail">
+              <p class="video-duration">57:43</p>
+            </div>
+            <div class="video-content">
+              <img src="./img/thumbnails/channel-logo-1.jpg" alt="Channel Logo" class="video-channel-logo">
+              <div class="video-description">
+                <h2 class="video-title">Lofi x Chess.com ♟️ - chill beats to play chess to</h2>
+                <p class="video-channel-name">Lofi Girl</p>
+                <p class="video-details">695K views • 9 months ago</p>
+              </div>
+              <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+          </a>
+          <!-- Video 2 -->
+          <a href="https://www.youtube.com/watch?v=ELSm-G201Ls" title="Curso de HTML y CSS desde CERO (COMPLETO)"
+            target="_blank" class="video-card">
+            <div class="video-preview">
+              <img src="./img/thumbnails/thumbnail-2.jpg" alt="Thumbnail" class="video-thumbnail">
+              <p class="video-duration">24:01:03</p>
+            </div>
+            <div class="video-content">
+              <img src="./img/thumbnails/channel-logo-2.jpg" alt="Channel Logo" class="video-channel-logo">
+              <div class="video-description">
+                <h2 class="video-title">Curso de HTML y CSS desde CERO (COMPLETO)</h2>
+                <p class="video-channel-name">Soy Dalto</p>
+                <p class="video-details">1.3M views • 6 months ago</p>
+              </div>
+              <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+          </a>
+          <!-- Video 3 -->
+          <a href="https://www.youtube.com/watch?v=ih9zBLDr_ro" title="furret walk - full song (1 hour)" target="_blank"
+            class="video-card">
+            <div class="video-preview">
+              <img src="./img/thumbnails/thumbnail-3.jpg" alt="Thumbnail" class="video-thumbnail">
+              <p class="video-duration">1:00:05</p>
+            </div>
+            <div class="video-content">
+              <img src="./img/thumbnails/channel-logo-3.jpg" alt="Channel Logo" class="video-channel-logo">
+              <div class="video-description">
+                <h2 class="video-title">furret walk - full song (1 hour)</h2>
+                <p class="video-channel-name">SoundHub</p>
+                <p class="video-details">6.5M views • 5 years ago</p>
+              </div>
+              <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+          </a>
+          <!-- Video 4 -->
+          <a href="https://youtube.com/watch?v=uxLuAz7b1tU"
+            title="🔥 #1 How to Create Inventory Management System with Database in python | 0 to Hero Course | Billing 🔥"
+            target="_blank" class="video-card">
+            <div class="video-preview">
+              <img src="./img/thumbnails/thumbnail-4.jpg" alt="Thumbnail" class="video-thumbnail">
+              <p class="video-duration">45:21</p>
+            </div>
+            <div class="video-content">
+              <img src="./img/thumbnails/channel-logo-4.jpg" alt="Channel Logo" class="video-channel-logo">
+              <div class="video-description">
+                <h2 class="video-title">
+                  🔥 #1 How to Create Inventory Management System with Database in python
+                  | 0 to Hero Course | Billing 🔥
+                </h2>
+                <p class="video-channel-name">Web code</p>
+                <p class="video-details">192K views • 3 years ago</p>
+              </div>
+              <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+          </a>
+          <!-- Video 5 -->
+          <a href="https://www.youtube.com/watch?v=zFqZggMcq34"
+            title="Pokemon Battle Royale (Loud Sound Warning) 💥 Collab With @Gnoggin" target="_blank"
+            class="video-card">
+            <div class="video-preview">
+              <img src="./img/thumbnails/thumbnail-5.jpg" alt="Thumbnail" class="video-thumbnail">
+              <p class="video-duration">6:15</p>
+            </div>
+            <div class="video-content">
+              <img src="./img/thumbnails/channel-logo-5.jpg" alt="Channel Logo" class="video-channel-logo">
+              <div class="video-description">
+                <h2 class="video-title">Pokemon Battle Royale (Loud Sound Warning) 💥 Collab With @Gnoggin</h2>
+                <p class="video-channel-name">TerminalMontage</p>
+                <p class="video-details">49M views • 6 years ago</p>
+              </div>
+              <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+          </a>
+          <!-- Video 6 -->
+          <a href="https://youtube.com/watch?v=F5mRW0jo-U4"
+            title="Python Django Web Framework - Full Course for Beginners" target="_blank" class="video-card">
+            <div class="video-preview">
+              <img src="./img/thumbnails/thumbnail-6.jpg" alt="Thumbnail" class="video-thumbnail">
+              <p class="video-duration">3:45:41</p>
+            </div>
+            <div class="video-content">
+              <img src="./img/thumbnails/channel-logo-6.jpg" alt="Channel Logo" class="video-channel-logo">
+              <div class="video-description">
+                <h2 class="video-title">Python Django Web Framework - Full Course for Beginners</h2>
+                <p class="video-channel-name">freeCodeCamp.org</p>
+                <p class="video-details">4.4M views • 5 years ago</p>
+              </div>
+              <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+          </a>
+          <!-- Video 7 -->
+          <a href="https://www.youtube.com/watch?v=sW9npZVpiMI" title="why you NEED math for programming"
+            target="_blank" class="video-card">
+            <div class="video-preview">
+              <img src="./img/thumbnails/thumbnail-7.jpg" alt="Thumbnail" class="video-thumbnail">
+              <p class="video-duration">5:02</p>
+            </div>
+            <div class="video-content">
+              <img src="./img/thumbnails/channel-logo-7.jpg" alt="Channel Logo" class="video-channel-logo">
+              <div class="video-description">
+                <h2 class="video-title">why you NEED math for programming</h2>
+                <p class="video-channel-name">Joma Tech</p>
+                <p class="video-details">8.8M views • 3 years ago</p>
+              </div>
+              <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+          </a>
+          <!-- Video 8 -->
+          <a href="https://www.youtube.com/watch?v=z95mZVUcJ-E"
+            title="Curso de JAVASCRIPT desde CERO (Completo) - Nivel JUNIOR" target="_blank" class="video-card">
+            <div class="video-preview">
+              <img src="./img/thumbnails/thumbnail-8.jpg" alt="Thumbnail" class="video-thumbnail">
+              <p class="video-duration">10:00:40</p>
+            </div>
+            <div class="video-content">
+              <img src="./img/thumbnails/channel-logo-8.jpg" alt="Channel Logo" class="video-channel-logo">
+              <div class="video-description">
+                <h2 class="video-title">Curso de JAVASCRIPT desde CERO (Completo) - Nivel JUNIOR</h2>
+                <p class="video-channel-name">Soy Dalto</p>
+                <p class="video-details">4.6M views • 3 years ago</p>
+              </div>
+              <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+          </a>
+          <!-- Video 9 -->
+          <a href="https://www.youtube.com/watch?v=e-hTm5VmofI" title="Astro Web Framework Crash Course" target="_blank"
+            class="video-card">
+            <div class="video-preview">
+              <img src="./img/thumbnails/thumbnail-9.jpg" alt="Thumbnail" class="video-thumbnail">
+              <p class="video-duration">1:16:47</p>
+            </div>
+            <div class="video-content">
+              <img src="./img/thumbnails/channel-logo-9.jpg" alt="Channel Logo" class="video-channel-logo">
+              <div class="video-description">
+                <h2 class="video-title">Astro Web Framework Crash Course</h2>
+                <p class="video-channel-name">freeCodeCamp.org</p>
+                <p class="video-details">104K views • 11 months ago</p>
+              </div>
+              <button class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Footer -->
+      <section>
+        <div class="footer">
+          <p><b>Use SHIFT + Mouse wheel to scroll through categories</b></p>
+          <div>
+            <p>Made with ❤️ by this little thing</p>
+            <img src="./img/me.png" alt="This is me" class="me">
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
