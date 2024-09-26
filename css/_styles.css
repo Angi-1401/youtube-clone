@@ -22,7 +22,6 @@
 /* Custom default styles */
 
 body {
-  min-width: 600px;
   font-family: "Noto Sans", sans-serif;
   background-color: var(--white-color);
 }
